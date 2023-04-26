@@ -1,0 +1,41 @@
+body {
+    background-color: antiquewhite;
+    /* gets rid of the margin in the body */
+    margin: 0;
+}
+h1 {
+    background-color: lightcoral;
+    /* first top, 2nd left, 3rd bottom, 4th right. if only 2 numbers, 1st is top/bottom, 2nd is left/right. */
+    padding: 10px 20px;
+    /* adds a 20px margin to the h1 tag */
+    margin: 20px;
+    /* adds a boarder */
+    border: 5px solid cadetblue;
+    /* rounds the corners of the box */
+    border-radius: 20px;
+    /* changes the text color with a hex color*/
+    color: #105B68;
+    text-align: center;
+}
+/* more specific than the element h1 and the class "highlight"*/
+#smaller {
+    /* changes the font size, em is the multiplier */
+    font-size: 1.3em;
+    /* restricts the item size, as the screen gets smaller it changes*/
+    max-width: 50%;
+    /* centers the actual box */
+    margin: 0 auto;
+}
+
+/* more specific than the h1 */
+.highlight {
+    background-color: olivedrab;
+}
+
+h2 {
+    background-color: orange;
+}
+
+.purph2 {
+    background-color: purple;
+}
