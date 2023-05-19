@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Raleway&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 .logo {
@@ -9,6 +15,7 @@
 
 .icon {
     width: 80px;
+    padding-top: 10px
 }
 
 #hero-img {
@@ -16,10 +23,11 @@
 }
 
 nav a {
+    background-color: #8AC5D7;
+    color: #FFF6E7;
     text-align: center;
-    background-color: #234266;
-    color: #80AB92;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -41,6 +49,14 @@ main section {
 
 body {
     background-color: #FFF6E7;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -48,40 +64,63 @@ header {
 }
 
 nav a:hover {
-    background-color: #8AC5D7;
-    color: #FFF6E7;
+    background-color: #234266;
+    color: #80AB92;
 }
 
 .book, .join {
     background-color: #8AC5D7;
     color: #234266;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     color: #FFF6E7;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .msg {
     background-color: #8AC5D7;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #234266;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .msg p {
     color: #FFF6E7;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping_card, .rapids_card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #234266;
 }
 
 footer {
     background-color: #8AC5D7;
     color: #FFF6E7;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
- color: #234266;
- text-decoration: none;
+    color: #234266;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -93,8 +132,15 @@ footer p {
     font-size: 1.2em;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: #FFF6E7;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
