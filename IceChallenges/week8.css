@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#glassesImg {
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color:rgb(66, 66, 66)
+}
+
+p {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;    
+    font-size: 20px;
+    color: rgb(99, 99, 99);
+}
+
+#formBox {
+    grid-column: 2/3;
+}
+
+#form {
+    display: grid;
+}
+
+.textBox {
+    height: 40px;
+    border-color: #EEEEEE;
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#checkboxLabel {
+    justify-content: left;
+}
+
+#checkboxText {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    justify-self: left;
+}
+
+#button {
+    height: 40px;
+    margin: 5px 250px;
+    border: white;
+    border-radius: 5px;
+    background-color: rgb(231, 167, 47);
+    color: white;
+    font-weight: 700;
+}
+
+
