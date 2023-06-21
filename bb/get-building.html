@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautifully Blocky | Get Building</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/BeautifullyBlockyLogoBrown.png" alt="Beautifully Blocky Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="build-gallery.html">Build Gallery</a>
+                <a href="get-building.html">Get Building</a>
+                <a href="site-plan.html">Site Plan</a>
+            </nav>
+        </header>
+        <main class="get-building-grid">
+            <div id="background"></div>
+            <img class="color-palate" src="images/build1.jpg" alt="Build Palate Ideas">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li><h3>Enter your build information:</h3></li>
+                    <li>
+                        <label for="Seed">World Seed</label>
+                        <input type="text" id="seed" name="seed"/>
+                    </li>
+                    <li>
+                        <label for="X-Coordinate">X-Coordinate</label>
+                        <input type="text" id="x-coord" name="x_coord"/>
+                    </li>
+                    <li>
+                        <label for="Y-Coordinate">Y-Coordinate</label>
+                        <input type="text" id="y-coord" name="y_coord"/>
+                    </li>
+                    <li>
+                        <label for="Z-Coordinate">Z-Coordinate</label>
+                        <input type="text" id="Z-coord" name="Z_coord"/>
+                    </li>
+                    <li>
+                        <label for="Request">Request:</label>
+                        <textarea id="request" name="user_request"></textarea>
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email"/>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Submit Build Request</button>
+                    </li>                      
+                </ul>
+            </form>
+            <img class="build-styles" src="images/build2.avif" alt="Build Style Examples">
+        </main>
+        <footer>
+            <p>Beautifully Blocky © 2023 - Jada Bower</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href=mailto:"beautifully_blocky@fakemail.com">beautifully_blocky@fakemail.com</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
