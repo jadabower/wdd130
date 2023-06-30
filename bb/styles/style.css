@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico&family=VT323&display=swap');
+
+/* Home Page */
+/* Navigation */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+body {
+    background-color: #FEFAE0;
+    font-family: "Press Start 2P", Quantico, VT323, Helvetica;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:hover {
+    background-color: #BC6C25;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: #DDA15E;
+    color: #FFF6E7;
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+}
+
+header {
+    background-color: #DDA15E;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+/* Hero */
+#hero {
+    display: grid;
+    grid-template-columns: 500px 1fr 500px;
+    grid-template-rows: 1fr 200px 1fr;
+}
+
+#hero-img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    z-index: 0;
+}
+
+#hero-msg {
+    z-index: 2;
+    background-color: #606C38;
+    color: #FEFAE0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 20px;
+    font-family: Quantico, VT323, Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+.home-title {
+    font-family: "Press Start 2P", Quantico, VT323, Helvetica;
+    font-size: 25px;
+    line-height: 2em;
+}
+
+/* Home Grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 145px 50px 1fr 50px 145px;
+}
+
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+.msg {
+    background-color: #283618;
+    color: #FEFAE0;
+    z-index: 1;
+    line-height: 2em;
+    padding: 35px;
+    grid-column: 2/7;
+    grid-row: 3/4;
+    text-align: right;
+}
+
+.msg p {
+    font-family: Quantico, VT323, Helvetica;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.hill-house {
+    z-index: 0;
+    width: 100%;
+    grid-column: 6/10;
+    grid-row: 2/5;
+}
+
+/* Footer */
+footer {
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    padding: 10px;
+    margin-top: 200px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #FEFAE0;
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+}
+
+footer a:hover {
+    color: #BC6C25;
+}
+
+footer p {
+    font-family: Quantico, VT323, Helvetica;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer .social {
+    padding-top: 15px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
