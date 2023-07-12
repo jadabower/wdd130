@@ -266,16 +266,16 @@ footer .social {
 }
 
 
-
+/* Get Building */
 
 /* The container */
 .container {
-    display: block;
+    /* display: block; */
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: .5em;
+    font-size: 15px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -298,12 +298,12 @@ footer .social {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: white;
 }
   
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: white;
 }
   
 /* When the checkbox is checked, add a blue background */
@@ -329,9 +329,99 @@ footer .social {
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #FEFAE0;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.get-building-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 5fr 1fr 4fr 1fr;
+    grid-template-rows: 60px 60px 1fr 60px;
+}
+
+
+.color-palate {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    z-index: 0;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    /* Uniform size & alignment */
+    width: 90px;
+    text-align: right;
+}
+
+form li + li {
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-family: "Press Start 2P", Quantico, VT323, Helvetica;
+    font-size: 20px;
+}
+
+.building-form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 100%;
+    /* Form outline */
+    padding: 1em;
+    color: #FEFAE0;
+    font-family: Quantico, VT323, Helvetica;
+    font-size: 20px;
+    background-color: #283618;
+    grid-column: 3/6;
+    grid-row: 2/5;
+    z-index: 1;
+}
+
+.button {
+    margin-top: .5em;
+    margin-left: 200px;
+}
+
+button {
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    padding: 5px 13px;
+    border: 0 none;
+    font-family: Quantico, VT323, Helvetica;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #BC6C25;
+}
+
+.sunset {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    grid-column: 5/7;
+    grid-row: 3/4;
+    z-index: 0;
 }
