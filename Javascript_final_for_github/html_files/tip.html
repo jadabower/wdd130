@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Final | Tip Calculator</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="linkText">Home</a>
+            <a href="tip.html" class="linkText">Calculate Tip</a>
+            <a href="salesTax.html" class="linkText">Calculate Sales Tax</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <label for="original_price">Original Price:</label>
+            <input type="number" id="original_price" name="original_price">
+        </div>
+        <p>
+            Tip: 
+            <select id="tip">
+                <option value="0">No Tip</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+                <option value="30">30%</option>
+            </select>
+        </p>
+        <div>
+            <label for="total_price">Total Price:</label>
+            <p id="total_price"></p>
+        </div>
+    </main>
+</body>
+</html>
