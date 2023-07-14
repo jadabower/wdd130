@@ -35,11 +35,23 @@ function getOriginalPrice() {
 
 // A function to take in a percent and original price and calculate and output the total price
 function output(percent, original_price) {
-  let total_price = (((percent * 0.01) * original_price) + original_price).toFixed(2);
+  let total_price = (percent * 0.01 * original_price + original_price).toFixed(
+    2
+  );
   let paragraph_with_total = document.getElementById("total_price");
   paragraph_with_total.innerHTML = `\$${total_price}`;
 }
 
+function clear() {
+  document.getElementById("total_price").innerHTML = "";
+  if (document.getElementById("tip")) {
+    getTipPercent();
+  } else if (document.getElementById("state")) {
+    getTaxPercent();
+  }
+}
+
 // Event listeners to listen for when it changes the state or tip chosen
-document.getElementById("tip").addEventListener("change", getTipPercent);
-document.getElementById("state").addEventListener("change", getTaxPercent);
+document.getElementById("tip")?.addEventListener("change", getTipPercent);
+document.getElementById("state")?.addEventListener("change", getTaxPercent);
+document.getElementById("original_price")?.addEventListener("input", clear);
